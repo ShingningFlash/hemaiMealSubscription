@@ -1,0 +1,215 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "禾麦餐饮",
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+		}, {
+			"path": "pages/meal/meal",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"backgroundColor": "#ffffff"
+			}
+
+		},
+		{
+		 "path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom" ,// 隐藏系统导航栏
+				"backgroundColor": "#ffffff"
+
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "white"
+			}
+
+		}, {
+			"path": "pages/index/BindingEnterprises",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/PhoneVerification",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/index/setting",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人设置",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/ComplaintsSuggestions",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投诉建议",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/point/point",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "请选择自提点",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/meal/createOrder/createOrder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "创建订单",
+                "enablePullDownRefresh": false,
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/order/order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#D73334",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/order/orderDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "订单详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#F5F5F5"
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/order/enterprise",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "企业订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#D73334",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/aboutUs",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "关于我们",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/order/riderorder",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "配送订单",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#d73334",
+				"navigationBarTextStyle": "white"
+				
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/changeuserinfo/changeuserinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "信息修改",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/index/about/about",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#d73334",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "和麦餐饮",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#D73334",
+		"backgroundColor": "#fff",
+		"borderStyle": "black",
+		"iconWidth": "24px",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index_selected.png",
+				"text": "首页"
+				
+
+			}, {
+				"pagePath": "pages/meal/meal",
+				"iconPath": "static/icon/meal.png",
+				"selectedIconPath": "static/icon/meal_selected.png",
+				"text": "点餐"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/icon/cart.png",
+				"selectedIconPath": "static/icon/cart_selected.png",
+				"text": "订单"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my_selected.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
